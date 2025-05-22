@@ -1,42 +1,44 @@
-**Yalnızca Türk numaralarına SMS göndermek için geliştirilmiş gelişmiş bir araçtır.**  
-GUI ve Termux sürümleri mevcuttur.
+# Enough
+_It's enough to make a man go crazy_
+<br><br>
+[![Hits](https://hits.sh/github.com/tingirifistik/Enough-Reborn.svg?label=views&color=007ec6)](https://hits.sh/github.com/tingirifistik/Enough-Reborn/)
 
----
+<img src=https://github.com/tingirifistik/Enough-Reborn/assets/51286195/fc10a910-b4a4-4ff2-8058-62767b9af30f height="200px" width="400px"/>
+<img src=https://user-images.githubusercontent.com/51286195/209442235-7069b8e7-b3f3-4b70-82cb-a86014836be0.png height="200px" width="400px"/>
 
-## 🚀 Özellikler
 
-- 🟩 Matrix temalı modern arayüz (CustomTkinter ile)
-- 📊 Toplam gönderilen SMS grafiği (matplotlib)
-- 🧪 API Servis Test sekmesi (bozuk servisleri tespit etme)
-- 🌐 Proxy desteği (`proxyler.txt`)
-  - Proxy'ler rastgele seçilir
-  - Hatalı proxy'ler otomatik blacklist'e alınır
-- ⚙️ Ayarlar Menüsü:
-  - Tema (dark/light/system)
-  - Renk teması seçimi (green, blue, dark-blue)
-  - Giriş şifresi, log ayarları, bad.json kontrolü
-- 🧱 Termux Terminal Sürümü:
-  - Menülü kullanım
-  - Arayüzsüz sade terminal
-  - Turbo mod, sonsuz gönderim, log kontrolü
+<h2>Kurulum</h2>
 
----
+```console
+git clone https://github.com/tingirifistik/Enough-Reborn.git
+cd Enough-Reborn
+pip3 install -r requirements.txt
+python3 enough.py
+```
 
-## ⚠️ Uyarı
 
-Bu araç **yalnızca eğitim, test ve kişisel kullanım** amacıyla geliştirilmiştir.  
-Tüm kullanım sorumluluğu kullanıcıya aittir.  
-Lütfen yasalara uygun şekilde kullanınız.
+<h2>Discord Bot</h2>
 
----
+Bot'un çalışabilmesi için 'Privileged Gateway Intents' seçeneklerinin hepsinin aktif olması gerekmektedir.
 
-## 📦 Gereksinimler
+<h2>Discord Selfbot</h2>
 
-Python 3.10 veya 3.11 önerilir.  
-GUI sürümü için `customtkinter`, `matplotlib`, `colorama`, `requests` gerekir.  
-Termux sürümü için sadece `requests` ve `colorama` yeterlidir.
+**Token bulma:**
 
-### 🔧 Pip ile tek komutla yükleme:
+1- Tarayıcıdan bot olarak kullanacağınız Discord hesabına giriniz.<br>
+2- Tarayıcı konsolunu açınız.<br>
+3- Ağ trafiği izleme bölümüne geliniz.<br>
+4- Konsolu kapatmadan, Discord'da bu oturum boyunca tıklamadığınız bir sohbete tıklayınız.<br>
+5- Sonu *messages?limit=50* ile biten isteğe tıklayınız.<br>
+6- İsteğin *Header* kısmındaki *Authorization* değeri sizin token'ınızdır.<br>
+7- Bu token'ı *discord-selfbot-enough.py*'de *token* kısmına yazınız. (str olarak)<br>
 
-```bash
-pip install colorama requests customtkinter matplotlib
+**Chat Id Bulma:**
+
+1- Bot hesabı ile mesajlaşacağınız kendi orijinal hesabınızdan bot'a bir tane mesaj atınız.<br>
+2- Tarayıcıda Discord'u açın ve bot hesabına giriş yapınız, ardından gerçek hesabınızın üzerine tıklayın.<br>
+3- Url'deki *@me*'den sonraki sayı sizin sohbet id'nizdir.<br>
+4- Bu id'yi *discord-selfbot-enough.py*'de *chat_id* kısmına yazınız. (int olarak)<br><br>
+**Not:** Eğer bot'u Discord sunucusunda kullanacaksanız, *channels*'dan sonra gelen, taksim ile ayrılmış iki sayıdan ikincisi sohbet id'nizdir.
+<br><br>
+<a href="https://www.buymeacoffee.com/tingirifistik" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>

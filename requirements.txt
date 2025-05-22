@@ -1,0 +1,7 @@
+colorama
+requests
+customtkinter
+matplotlib
+tkinter
+threading
+subprocess

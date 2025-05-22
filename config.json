@@ -1,0 +1,14 @@
+{
+  "theme": "dark",
+  "font_size": "medium",
+  "fullscreen_start": false,
+  "show_logo": false,
+  "log_enabled": true,
+  "log_dir": "logs",
+  "log_clear_on_exit": false,
+  "auto_skip_failed": true,
+  "password": "EREN97",
+  "theme_color": "blue",
+  "use_proxy": true,
+  "random_proxy": false
+}
